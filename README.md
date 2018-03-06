@@ -11,7 +11,7 @@ However [`html-webpack-plugin`](https://www.npmjs.com/package/html-webpack-plugi
 
 But if you want to get additional control over those scripts `html-webpack-scripts-plugin` will help!
 
-### Additional control
+Additional control
 ----------------------
 Add specific attributes like `async` `defer` `id` `charset`:
 ```js
