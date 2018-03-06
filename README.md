@@ -11,9 +11,20 @@ However [`html-webpack-plugin`](https://www.npmjs.com/package/html-webpack-plugi
 But if you want to get additional control over those scripts `html-webpack-scripts-plugin` will help!
 
 ### Additional control
-- Add specific attributes like `async` `defer` `id` `charset`
+Add specific attributes like `async` `defer` `id` `charset`:
 ```js
-alert(1)
+// webpack.config.js
+let HtmlWebpackScriptsPlugin = require('html-webpack-scripts-plugin')
+...
+module.exports = {
+...
+  plugins: [
+    new HtmlWebpackScriptsPlugin({
+      'defer charset=utf8': /vendor/,
+      'async id=app_script': /app/
+     })
+  ]
+}
 ```
 - Add custom attributes like `data-*`
 
