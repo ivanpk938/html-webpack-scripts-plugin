@@ -12,7 +12,7 @@ But if you want to get additional control over those scripts `html-webpack-scrip
 
 Additional control
 ----------------------
-#### Add specific attributes like `async` `defer` `id` `charset`:
+##### Add specific attributes like `async` `defer` `id` `charset`:
 ```js
 // webpack.config.js
 let HtmlWebpackScriptsPlugin = require('html-webpack-scripts-plugin')
