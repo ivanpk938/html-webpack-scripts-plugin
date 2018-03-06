@@ -8,8 +8,17 @@ More likely you'll use the second option and generate HTML automatically.
 However [`html-webpack-plugin`](https://www.npmjs.com/package/html-webpack-plugin) will add plain scripts into generated HTML like
 `<script type="text/javascript" src="/bundle/vendor.0a78e31b5c440.js"></script>`. It won't give you additional control over those scripts.
 
-
 But if you want to get additional control over those scripts `html-webpack-scripts-plugin` will help!
 
 ### Additional control
+- Add specific attributes like `async` `defer` `id` `charset`
+```js
+alert(1)
+```
+- Add custom attributes like `data-*`
 
+- Inline:
+```js
+<script type="text/javascript" src="/bundle/vendor.0a78e31b5c440.js"></script>
+``` =>
+<script type="text/javascript"> /* content of /bundle/vendor.0a78e31b5c440.js */ </script>
