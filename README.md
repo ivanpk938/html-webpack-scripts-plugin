@@ -9,7 +9,7 @@ However [`html-webpack-plugin`](https://www.npmjs.com/package/html-webpack-plugi
 `<script type="text/javascript" src="/bundle/vendor.0a78e31b5c440.js"></script>`. It won't give you additional control over those scripts.
 
 
-But if you want additional control over those scripts `html-webpack-scripts-plugin` will help!
+But if you want to get additional control over those scripts `html-webpack-scripts-plugin` will help!
 
 ### Additional control
 
