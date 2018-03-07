@@ -32,6 +32,18 @@ And these scripts will be included in your HTML:
 
 #### Add custom attributes like `data-*`
 ```js
+// webpack.config.js
+plugins: [
+  new HtmlWebpackScriptsPlugin({
+    'defer data-script-defer=true': /vendor/,
+    'charset=utf8 id=appscript inline': /app/
+  })
+]
+```
+And these scripts will be included in your HTML:
+```html
+<script defer data-script-defer="true" type="text/javascript" src="vendor.0a78e31b5c440.js"></script>
+<script charset="utf8" id="appscript" type="text/javascript"> /* Content of app.4234fe71c300ea.js */ </script>
 ```
 
 #### Make scripts inline:
@@ -50,7 +62,7 @@ console.log(helloApp)
 Lets make them inline:
 ```js
 plugins: [
-  new HtmlWebpackScriptsPlugin({ inline: /vendor|app/ })
+   new HtmlWebpackScriptsPlugin({ inline: /vendor|app/ })
 ]
 ```
 
