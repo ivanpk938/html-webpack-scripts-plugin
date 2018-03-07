@@ -1,4 +1,4 @@
-# html-webpack-scripts-plugin
+
 `html-webpack-scripts-plugin` is a plugin for [Webpack](https://webpack.js.org/).
 
 ## Why
