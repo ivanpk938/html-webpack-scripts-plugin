@@ -1,4 +1,3 @@
-
 `html-webpack-scripts-plugin` is a plugin for [Webpack](https://webpack.js.org/).
 
 ## Why
@@ -51,7 +50,7 @@ console.log(helloApp)
 Lets make them inline:
 ```js
 plugins: [
-  new HtmlWebpackScriptsPlugin({ inline: /vendor/ })
+  new HtmlWebpackScriptsPlugin({ inline: /vendor|app/ })
 ]
 ```
 
