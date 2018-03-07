@@ -35,15 +35,15 @@ And these scripts will be included in your HTML:
 // webpack.config.js
 plugins: [
   new HtmlWebpackScriptsPlugin({
-    'defer data-script-defer=true': /vendor/,
-    'charset=utf8 id=appscript inline': /app/
+    'defer data-script-defer=true': /vendor/, 
+    'charset=utf8 id=appscript inline data-script-inline=true': /app/
   })
 ]
 ```
 And these scripts will be included in your HTML:
 ```html
 <script defer data-script-defer="true" type="text/javascript" src="vendor.0a78e31b5c440.js"></script>
-<script charset="utf8" id="appscript" type="text/javascript"> /* Content of app.4234fe71c300ea.js */ </script>
+<script charset="utf8" id="appscript" data-script-defer="true" type="text/javascript"> /* Content of app.4234fe71c300ea.js */ </script>
 ```
 
 #### Make scripts inline:
