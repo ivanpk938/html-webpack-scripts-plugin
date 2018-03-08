@@ -52,6 +52,7 @@ var helloApp = 'Hello app'
 console.log(helloApp)
 ```
 ```js
+// webpack.config.js
 plugins: [
    new HtmlWebpackScriptsPlugin({ inline: /vendor|app/ })
 ]
