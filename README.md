@@ -29,19 +29,15 @@ Plugin gives you ability to:
 // webpack.config.js
 
 const HtmlWebpackScriptsPlugin = require('html-webpack-scripts-plugin')
-
 const HtmlWebpackScriptsPluginInstance = new HtmlWebpackScriptsPlugin({
 	'defer charset=utf8': /vendor/,
 	'async id=appscript': /app/
 })
-
-
 module.exports = {
 	...
 	plugins: [..., HtmlWebpackScriptsPluginInstance]
 	...
 } 
-
 ```
 Output:
 ```html
@@ -55,18 +51,15 @@ Output:
 // webpack.config.js
 
 const HtmlWebpackScriptsPlugin = require('html-webpack-scripts-plugin')
-
 const HtmlWebpackScriptsPluginInstance = new HtmlWebpackScriptsPlugin({
 	'defer data-script-defer=true': /vendor/, 
 	'charset=utf8 id=appscript inline data-script-inline=true': /app/
 })
-
 module.exports = {
 	...
 	plugins: [..., HtmlWebpackScriptsPluginInstance]
 	...
 }
-
 ```
 Output:
 ```html
@@ -88,15 +81,12 @@ console.log('Webpack')
 // webpack.config.js
 
 const HtmlWebpackScriptsPlugin = require('html-webpack-scripts-plugin')
-
 const HtmlWebpackScriptsPluginInstance = new HtmlWebpackScriptsPlugin({ inline: /vendor|app/ })
-
 module.exports = {
 	...
 	plugins: [..., HtmlWebpackScriptsPluginInstance]
 	...
 }
-
 ```
 Output:
 ```html
