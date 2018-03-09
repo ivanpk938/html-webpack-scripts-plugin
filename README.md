@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/html-webpack-scripts-plugin.svg)](http://badge.fury.io/js/html-webpack-scripts-plugin)
 
-[![Dependency Status](https://david-dm.org/hypotenuse-packs/html-webpack-scripts-plugin.svg)](https://david-dm.org/hypotenuse-packs/html-webpack-scripts-plugin)
+[![Dependency Status](https://david-dm.org/hypotenuse/html-webpack-scripts-plugin.svg)](https://david-dm.org/hypotenuse-packs/html-webpack-scripts-plugin)
 
 [![NPM](https://nodei.co/npm/html-webpack-scripts-plugin.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/html-webpack-scripts-plugin/)
 
