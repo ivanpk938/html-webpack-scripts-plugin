@@ -30,7 +30,7 @@ Plugin gives you ability to:
 
 const HtmlWebpackScriptsPlugin = require('html-webpack-scripts-plugin')
 const HtmlWebpackScriptsPluginInstance = new HtmlWebpackScriptsPlugin({
-	'defer charset=utf8': /vendor/,
+	'defer charset=utf-8': /vendor/,
 	'async id=appscript': /app/
 })
 module.exports = {
@@ -41,7 +41,7 @@ module.exports = {
 ```
 Output:
 ```html
-<script defer charset="utf8" type="text/javascript" src="vendor.0a78e31b5c440.js"></script>
+<script defer charset="utf-8" type="text/javascript" src="vendor.0a78e31b5c440.js"></script>
 <script async id="appscript" type="text/javascript" src="app.4234fe71c300ea.js"></script>
 ```
 
@@ -53,7 +53,7 @@ Output:
 const HtmlWebpackScriptsPlugin = require('html-webpack-scripts-plugin')
 const HtmlWebpackScriptsPluginInstance = new HtmlWebpackScriptsPlugin({
 	'defer data-script-defer=true': /vendor/, 
-	'charset=utf8 id=appscript inline data-script-inline=true': /app/
+	'charset=utf-8 id=appscript inline data-script-inline=true': /app/
 })
 module.exports = {
 	...
@@ -64,7 +64,7 @@ module.exports = {
 Output:
 ```html
 <script defer data-script-defer="true" type="text/javascript" src="vendor.0a78e31b5c440.js"></script>
-<script charset="utf8" id="appscript" data-script-inline="true" type="text/javascript"> /* Content of app.4234fe71c300ea.js */ </script>
+<script charset="utf-8" id="appscript" data-script-inline="true" type="text/javascript"> /* Content of app.4234fe71c300ea.js */ </script>
 ```
 
 #### Make scripts inline:
