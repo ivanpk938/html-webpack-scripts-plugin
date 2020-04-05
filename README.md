@@ -93,3 +93,16 @@ Output:
 <script type="text/javascript">console.log('Hi')</script>
 <script type="text/javascript">console.log('Webpack')</script>
 ```
+
+#### Template extension:
+By default `html-webpack-plugin` generates .html file. In case if it generates file with different extension you can specify extension manually: 
+
+```js
+
+const HtmlWebpackScriptsPlugin = require('html-webpack-scripts-plugin')
+const HtmlWebpackScriptsPluginInstance = new HtmlWebpackScriptsPlugin({
+	templateExtension: 'ext',
+	inline: /\.js$/
+})
+ 
+```
